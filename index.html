@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>sabz-learn</title>
+  </head>
+  <body class="m-0 p-0 box-border bg-[#F3F4F6] font-sans">
+    <!--menue-->
+    <!--large-->
+    <div
+      class="w-[100%] h-[128px] bg-white lg:flex flex-wrap flex-row justify-between hidden"
+    >
+      <!--right part-->
+      <div class="h-[128px] flex flex-row flex-wrap">
+        <img
+          src="./img/./logo.webp"
+          alt="logo"
+          class="h-[60px] xl:h-[68px] mt-[30px] mx-8 inline-block"
+        />
+        <div class="flex flex-row flex-wrap">
+          <ul class="list-none px-3">
+            <li class="relative group/menue">
+              <a
+                href="#"
+                class="no-underline text-black text-lg leading-[100px] hover:text-lime-500"
+                >فرانت اند &or;
+              </a>
+              <ul
+                class="list-none leading-10 absolute top-[80px] px-6 py-4 w-[200px] bg-white text-md hidden group-hover/menue:block shadow-md shadow-zinc-500"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="no-underline text-black hover:text-lime-500"
+                    >آموزش HTML</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="no-underline text-black hover:text-lime-500"
+                    >آموزش CSS</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="no-underline text-black hover:text-lime-500"
+                    >آموزش Flex Box</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="no-underline text-black hover:text-lime-500"
+                    >آموزش CSS Grid</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="no-underline text-black hover:text-lime-500"
+                    >آموزش Tailwind CSS</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="no-underline text-black hover:text-lime-500"
+                    >آموزش اصولی طراحی قالب</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="no-underline text-black hover:text-lime-500"
+                    >آموزش بوت استرپ</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="no-underline text-black hover:text-lime-500"
+                    >آموزش جاوااسکریپت</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="no-underline text-black hover:text-lime-500"
+                    >آموزش جامع ریکت ReactJS</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="no-underline text-black hover:text-lime-500"
+                    >آموزش ویو جی اس</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="list-none px-3">
+            <li class="relative group/menue">
+              <a
+                href="#"
+                class="no-underline text-black text-lg leading-[100px] hover:text-lime-500"
+                >امنیت &or;
+              </a>
+              <ul
+                class="list-none leading-10 absolute top-[80px] px-6 py-4 w-[200px] bg-white text-md hidden group-hover/menue:block shadow-md shadow-zinc-500"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="no-underline text-black hover:text-lime-500"
+                    >نقشه راه ورود به دنیای هک</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="no-underline text-black hover:text-lime-500"
+                    >شبکه با گرایش امنیت</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="no-underline text-black hover:text-lime-500"
+                    >لینوکس با گرایش امنیت</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="no-underline text-black hover:text-lime-500"
+                    >آموزش هکر قانونمند- CEH VII</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="no-underline text-black hover:text-lime-500"
+                    >آموزش کالی لینوکس</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="no-underline text-black hover:text-lime-500"
+                    >آموزش پایتون سیاه</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="no-underline text-black hover:text-lime-500"
+                    >آموزش Burp Suite</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="no-underline text-black hover:text-lime-500"
+                    >آموزش جاوااسکریپت سیاه</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="list-none px-3">
+            <li class="relative group/menue">
+              <a
+                href="#"
+                class="no-underline text-black text-lg leading-[100px] hover:text-lime-500"
+                >پایتون &or;
+              </a>
+              <ul
+                class="list-none leading-10 absolute top-[80px] px-6 py-4 w-[200px] bg-white text-md hidden group-hover/menue:block shadow-md shadow-zinc-500"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="no-underline text-black hover:text-lime-500"
+                    >دوره آموزش پایتون</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="no-underline text-black hover:text-lime-500"
+                    >پروژه های کاربردی با پایتون</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="no-underline text-black hover:text-lime-500"
+                    >ترفند های کاربردی با پایتون</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="no-underline text-black hover:text-lime-500"
+                    >متخصص جنگو</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="no-underline text-black hover:text-lime-500"
+                    >مصورسازی داده با پایتون</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="list-none px-3">
+            <li class="relative">
+              <a
+                href="#"
+                class="no-underline text-black text-lg leading-[100px] hover:text-lime-500"
+                >مهارت های نرم</a
+              >
+            </li>
+          </ul>
+          <ul class="list-none px-3">
+            <li class="relative group/menue">
+              <a
+                href="#"
+                class="no-underline text-black text-lg leading-[100px] hover:text-lime-500"
+                >مقالات &or;
+              </a>
+              <ul
+                class="list-none leading-10 absolute top-[80px] px-6 py-4 w-[200px] bg-white text-md hidden group-hover/menue:block shadow-md shadow-zinc-500"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="no-underline text-black hover:text-lime-500"
+                    >اپ تی ام ال</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="no-underline text-black hover:text-lime-500"
+                    >بوت استرپ</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="no-underline text-black hover:text-lime-500"
+                    >پروژه های برنامه نویسی</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="no-underline text-black hover:text-lime-500"
+                    >تست نفوذ و امنیت وب</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="no-underline text-black hover:text-lime-500"
+                    >جی کوئری</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="no-underline text-black hover:text-lime-500"
+                    >ری اکت جی اس</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="no-underline text-black hover:text-lime-500"
+                    >سی اس اس</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="no-underline text-black hover:text-lime-500"
+                    >شروع برنامه نویسی</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="no-underline text-black hover:text-lime-500"
+                    >طراحی سایت</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="no-underline text-black hover:text-lime-500"
+                    >ویو جی اس</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--left-part-->
+      <div class="h-[128px] flex flex-row flex-wrap mx-4">
+        <label class="relative block my-7 mx-4">
+          <span class="sr-only">Search</span>
+          <span
+            class="absolute left-0 flex items-center pl-2 h-[51px] bg-[#F3F4F6] rounded-full"
+          >
+            <img
+              src="./img/sea.png"
+              alt="search"
+              class="h-6 w-6 my-4 mx-3 bg-[#F3F4F6]"
+            />
+          </span>
+          <input
+            class="placeholder:text-slate-400 xl:block hidden bg-[#F3F4F6] w-36 h-[52px] border-0 rounded-3xl pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 focus:w-52 sm:text-sm placeholder:font-sans"
+            placeholder="جستجو"
+            type="text"
+            name="search"
+          />
+        </label>
+        <!--dark mood-->
+        <div class="bg-[#F3F4F6] rounded-full w-14 h-14 my-6 mx-4">
+          <i class="fa-regular fa-moon text-3xl text-gray-500 m-4"></i>
+        </div>
+        <!--inputs-->
+        <div
+          class="xl:w-[170px] lg:w-[150px] h-[56px] mx-4 my-7 rounded-full hover:bg-[#38BDF8] bg-[#8ccfec] relative"
+        >
+          <a
+            href="#"
+            class="no-underline text-white text-lg px-4 leading-[46px]"
+            >ورود</a
+          >
+        </div>
+        <div
+          class="xl:w-[100px] lg:w-[80px] h-[56px] rounded-full hover:bg-[#0284C7] bg-[#3296c8] absolute left-8 top-7"
+        >
+          <a
+            href="#"
+            class="no-underline text-white text-lg ps-5 pt-10 leading-[46px]"
+            >عضویت</a
+          >
+        </div>
+      </div>
+    </div>
+    <!--medium-->
+    <div
+      class="w-[100%] h-[80px] bg-white flex-wrap flex-row justify-between flex lg:hidden"
+    >
+      <!--hamburger menue-->
+      <div class="group/menue">
+        <input type="radio" id="show" name="Toggle" class="peer/show hidden" />
+        <input
+          type="radio"
+          id="close"
+          name="Toggle"
+          class="hidden peer/close"
+        />
+        <label for="show">
+          <i class="fa-solid fa-bars text-3xl ms-11 my-6 cursor-pointer"></i
+        ></label>
+        <div
+          class="w-[240px] bg-white absolute top-0 right-0 text-center hidden peer-checked/show:block peer-checked/close:hidden"
+        >
+          <label
+            for="close"
+            class="text-5xl absolute top-1 left-2 cursor-pointer"
+            >&times;</label
+          >
+          <img
+            src="./img/./logo.webp"
+            alt="logo"
+            class="h-[50px] mt-[20px] inline-block"
+          />
+          <hr class="mx-4 text-slate-300" />
+          <label class="relative block my-7 mx-4">
+            <span class="sr-only">Search</span>
+            <span
+              class="absolute left-0 flex items-center pl-2 h-[42px] rounded-full"
+            >
+              <img
+                src="./img/sea.png"
+                alt="search"
+                class="h-6 w-6 my-4 mx-3 bg-[#F3F4F6]"
+              />
+            </span>
+            <input
+              class="placeholder:text-slate-400 xl:block bg-[#F3F4F6] w-36 h-[42px] border-0 rounded-2xl pl-9 pr-3 shadow-sm focus:outline-none focus:border-black focus:border-2 sm:text-sm placeholder:font-sans"
+              placeholder="جستجو"
+              type="text"
+              name="search"
+            />
+          </label>
+          <!--acardion-->
+          <div class="w-[100%]">
+            <div class="collapse collapse-arrow join-item m-0 p-0">
+              <input type="radio" name="my-accordion-4 m-0 p-0" />
+              <div
+                class="collapse-title text-lg text-black text-right m-0 p-0 px-6"
+              >
+                فرانت اند &or;
+              </div>
+              <div class="collapse-content">
+                <ul class="list-none text-md text-right p-0 m-0">
+                  <li>
+                    <a
+                      href="#"
+                      class="no-underline text-black hover:text-lime-500"
+                      >آموزش HTML</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="no-underline text-black hover:text-lime-500"
+                      >آموزش CSS</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="no-underline text-black hover:text-lime-500"
+                      >آموزش Flex Box</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="no-underline text-black hover:text-lime-500"
+                      >آموزش CSS Grid</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="no-underline text-black hover:text-lime-500"
+                      >آموزش Tailwind CSS</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="no-underline text-black hover:text-lime-500"
+                      >آموزش اصولی طراحی قالب</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="no-underline text-black hover:text-lime-500"
+                      >آموزش بوت استرپ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="no-underline text-black hover:text-lime-500"
+                      >آموزش جاوااسکریپت</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="no-underline text-black hover:text-lime-500"
+                      >آموزش جامع ریکت ReactJS</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="no-underline text-black hover:text-lime-500"
+                      >آموزش ویو جی اس</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item m-0 p-0">
+              <input type="radio" name="my-accordion-4 m-0 p-0" />
+              <div
+                class="collapse-title text-lg text-black text-right m-0 p-0 px-6"
+              >
+                امنیت &or;
+              </div>
+              <div class="collapse-content">
+                <ul class="list-none text-md text-right p-0 m-0">
+                  <li>
+                    <a
+                      href="#"
+                      class="no-underline text-black hover:text-lime-500"
+                      >نقشه راه ورود به دنیای هک</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="no-underline text-black hover:text-lime-500"
+                      >شبکه با گرایش امنیت</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="no-underline text-black hover:text-lime-500"
+                      >لینوکس با گرایش امنیت</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="no-underline text-black hover:text-lime-500"
+                      >آموزش هکر قانونمند- CEH VII</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="no-underline text-black hover:text-lime-500"
+                      >آموزش کالی لینوکس</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="no-underline text-black hover:text-lime-500"
+                      >آموزش پایتون سیاه</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="no-underline text-black hover:text-lime-500"
+                      >آموزش Burp Suite</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="no-underline text-black hover:text-lime-500"
+                      >آموزش جاوااسکریپت سیاه</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item m-0 p-0">
+              <input type="radio" name="my-accordion-4 m-0 p-0" />
+              <div
+                class="collapse-title text-lg text-black text-right m-0 p-0 px-6"
+              >
+                پایتون &or;
+              </div>
+              <div class="collapse-content">
+                <ul class="list-none text-md text-right pt-0 mt-0">
+                  <li>
+                    <a
+                      href="#"
+                      class="no-underline text-black hover:text-lime-500"
+                      >دوره آموزش پایتون</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="no-underline text-black hover:text-lime-500"
+                      >پروژه های کاربردی با پایتون</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="no-underline text-black hover:text-lime-500"
+                      >ترفند های کاربردی با پایتون</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="no-underline text-black hover:text-lime-500"
+                      >متخصص جنگو</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="no-underline text-black hover:text-lime-500"
+                      >مصورسازی داده با پایتون</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item m-0 p-0">
+              <input type="radio" name="my-accordion-4 m-0 p-0" />
+              <div
+                class="collapse-title text-lg text-black text-right m-0 p-0 px-6"
+              >
+                مهارت های نرم
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item m-0 p-0">
+              <input type="radio" name="my-accordion-4 m-0 p-0" />
+              <div
+                class="collapse-title text-lg text-black text-right m-0 p-0 px-6"
+              >
+                مقالات &or;
+              </div>
+              <div class="collapse-content">
+                <ul class="list-none text-md text-right pt-0 mt-0">
+                  <li>
+                    <a
+                      href="#"
+                      class="no-underline text-black hover:text-lime-500"
+                      >اپ تی ام ال</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="no-underline text-black hover:text-lime-500"
+                      >بوت استرپ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="no-underline text-black hover:text-lime-500"
+                      >پروژه های برنامه نویسی</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="no-underline text-black hover:text-lime-500"
+                      >تست نفوذ و امنیت وب</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="no-underline text-black hover:text-lime-500"
+                      >جی کوئری</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="no-underline text-black hover:text-lime-500"
+                      >ری اکت جی اس</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="no-underline text-black hover:text-lime-500"
+                      >سی اس اس</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="no-underline text-black hover:text-lime-500"
+                      >شروع برنامه نویسی</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="no-underline text-black hover:text-lime-500"
+                      >طراحی سایت</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="no-underline text-black hover:text-lime-500"
+                      >ویو جی اس</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--logo-->
+      <img
+        src="./img/./logo.webp"
+        alt="logo"
+        class="h-[50px] mt-4 inline-block"
+      />
+      <!--btn-->
+      <div class="hidden md:flex">
+        <div
+          class="w-[160px] h-[46px] mx-4 my-4 rounded-full hover:bg-[#38BDF8] bg-[#8ccfec] relative me-11"
+        >
+          <a
+            href="#"
+            class="no-underline text-white text-lg px-5 leading-[36px]"
+            >ورود</a
+          >
+        </div>
+        <div
+          class="w-[100px] h-[46px] rounded-full hover:bg-[#0284C7] bg-[#3296c8] absolute left-10 top-4"
+        >
+          <a
+            href="#"
+            class="no-underline text-white text-lg ps-5 pt-10 leading-[40px]"
+            >عضویت</a
+          >
+        </div>
+      </div>
+      <!--small btn-->
+      <div
+        class="md:hidden h-[45px] w-[45px] rounded-full bg-[#F3F4F6] me-11 my-4"
+      >
+        <i class="fa-regular fa-user text-2xl m-2 mx-3 text-zinc-500"></i>
+      </div>
+    </div>
+    <!--end menue-->
+    <!--main-->
+    <!--first part-->
+    <div
+      class="flex flex-row-reverse flex-wrap sm:justify-around justify-center my-20 pt-8"
+    >
+      <div class="w-[100%] lg:w-[40%] text-center">
+        <img
+          src="./img/boy-light.svg"
+          alt="sbzl"
+          class="sm:h-[550px] h-[320px] mb-10"
+        />
+      </div>
+      <!--right-->
+      <div class="lg:max-w-[50%] text-center lg:text-start pt-10 ps-6">
+        <a href="#" class="no-underline mx-auto lg:mx-0">
+          <div
+            class="sm:w-[435px] w-[300px] h-[50px] bg-white rounded-full mx-auto lg:mx-0 flex justify-around flex-row flex-wrap"
+          >
+            <i
+              class="fa-solid fa-circle-exclamation text-green-500 sm:text-2xl text-xl ps-2 py-3 mx-1"
+            ></i>
+            <h5
+              class="text-lime-500 text-lg py-2 m-0 mx-1 hidden sm:inline-block"
+            >
+              توجه:
+            </h5>
+            <p class="text-black sm:text-lg text-sm m-0 py-2 mx-1">
+              دوره ریکت و جنگو بزودی افزایش قیمت دارن
+            </p>
+          </div>
+        </a>
+        <h1
+          class="text-5xl lg:text-6xl lg:leading-snug text-stone-900 mx-auto lg:mx-0"
+        >
+          ما به هر قیمتی <br />
+          دوره تولید نمی کنیم!
+        </h1>
+        <p
+          class="font-sans text-2xl w-[70%] text-zinc-800 mt-2 mb-14 mx-auto lg:mx-0"
+        >
+          با آکادمی خصوصی سبزلرن، علم برنامه نویسی رو با خیال راحت یاد بگیر و
+          پیشرفت کن
+        </p>
+        <div>
+          <div
+            class="sm:h-[56px] h-[40px] w-[170px] rounded-full mx-auto sm:mx-0 mb-6 hover:bg-[#0284C7] bg-[#4da1ca] sm:inline-block block cursor-pointer"
+          >
+            <a
+              href="#"
+              class="no-underline text-white text-lg sm:px-5 ps-2 sm:leading-[50px] leading-[38px]"
+              >از اینجا شروع کن</a
+            >
+          </div>
+          <div
+            class="sm:h-[56px] sm:w-[56px] w-[40px] h-[40px] rounded-full hover:bg-green-600 bg-green-400 inline-block sm:ms-12 ms-4 cursor-pointer"
+          >
+            <a
+              href="#"
+              class="no-underline inline-block text-white text-lg leading-[38px]"
+              ><i
+                class="fa-solid fa-play sm:text-3xl text-2xl sm:p-3 sm:px-4 p-2"
+              ></i
+            ></a>
+          </div>
+          <a
+            href="#"
+            class="no-underline inline-block text-zinc-600 sm:text-xl text-lg mx-4"
+            >ما کی هستیم؟</a
+          >
+        </div>
+      </div>
+    </div>
+    <!--latest terms-->
+    <div class="mb-[40px] p-10">
+      <span
+        class="inline-block w-3.5 h-3.5 bg-amber-400 rounded-sm mx-3"
+      ></span>
+      <h3
+        class="text-zinc-700 font-sans text-2xl sm:text-3xl w-fit inline-block m-0"
+      >
+        آخرین دوره ها
+      </h3>
+      <p class="text-slate-500 sm:text-xl mx-3">سکوی پرتاپ شما به سمت موفقیت</p>
+    </div>
+
+    <!--road map-->
+    <div class="mb-[40px] p-10">
+      <span
+        class="inline-block w-3.5 h-3.5 bg-fuchsia-500 rounded-sm mx-3"
+      ></span>
+      <h3
+        class="text-zinc-700 font-sans text-2xl sm:text-3xl w-fit inline-block m-0"
+      >
+        نقشه راه ها
+      </h3>
+      <p class="text-slate-500 sm:text-xl mx-3">
+        نقشه های راه برای شروع اصولی یادگیری
+      </p>
+    </div>
+
+    <!--help-->
+    <div class="mb-[40px] p-10">
+      <span class="inline-block w-3.5 h-3.5 bg-sky-500 rounded-sm mx-3"></span>
+      <h3
+        class="text-zinc-700 font-sans text-2xl sm:text-3xl w-fit inline-block m-0"
+      >
+        ما چه کمکی بهتون میکنیم؟
+      </h3>
+      <p class="text-slate-500 sm:text-xl mx-3">
+        از اونجایی که آکادمی آموزشی سبزلرن یک آکادمی خصوصی هست
+      </p>
+    </div>
+
+    <!--new terms-->
+    <div class="mb-[40px] p-10">
+      <span
+        class="inline-block w-3.5 h-3.5 bg-emerald-700 rounded-sm mx-3"
+      ></span>
+      <h3
+        class="text-zinc-700 font-sans text-2xl sm:text-3xl w-fit inline-block m-0"
+      >
+        جدیدترین دوره ها
+      </h3>
+      <p class="text-slate-500 sm:text-xl mx-3">یادگیری و رشد توسعه فردی</p>
+    </div>
+
+    <!--latest articles-->
+    <div class="mb-[40px] p-10">
+      <span class="inline-block w-3.5 h-3.5 bg-pink-500 rounded-sm mx-3"></span>
+      <h3
+        class="text-zinc-700 font-sans text-2xl sm:text-3xl w-fit inline-block m-0"
+      >
+        آخرین مقالات
+      </h3>
+      <p class="text-slate-500 sm:text-xl mx-3">مقالات بروز برنامه نویسی</p>
+    </div>
+
+    <!--instagram-->
+
+    <!--famous term-->
+    <div class="mb-[40px] p-10">
+      <span
+        class="inline-block w-3.5 h-3.5 bg-green-700 rounded-sm mx-3"
+      ></span>
+      <h3
+        class="text-zinc-700 font-sans text-2xl sm:text-3xl w-fit inline-block m-0"
+      >
+        محبوب ترین دوره ها
+      </h3>
+      <p class="text-slate-500 sm:text-xl mx-3">
+        پرمخاطب ترین و بهترین دوره های سبزلرن
+      </p>
+    </div>
+    <!--footer-->
+
+    <footer
+      class="px-14 pt-8 lg:pt-16 mt-24 bg-white border-t-gray-700 text-slate-500 text-base xl:text-lg"
+    >
+      <div class="container">
+        <div
+          class="flex justify-between flex-wrap gap-x-4 pb-5 border-b dark:border-b-gray-700"
+        >
+          <div class="flex flex-col flex-grow">
+            <h4 class="text-2xl text-zinc-700 text-center mb-2 sm:text-start">
+              درباره ما
+            </h4>
+            <p class="sm:max-w-xs text-center sm:text-start">
+              سبزلرن یک اکادمی خصوصی آموزش برنامه نویسی هست که با هدف تحویل
+              نیروی متخصص بر پایه تولید محتوای غیرسطحی فعالیت میکند
+            </p>
+          </div>
+          <div class="flex flex-col flex-grow">
+            <h4 class="text-2xl text-zinc-700 text-center mb-2 sm:text-start">
+              دسترسی سریع
+            </h4>
+            <div class="flex flex-col flex-wrap justify-between">
+              <a
+                href="#"
+                class="no-underline text-slate-500 hover:text-lime-600 my-2"
+                >قوانین و مقررات
+              </a>
+              <a
+                href="#"
+                class="no-underline text-slate-500 hover:text-lime-600 my-2"
+                >ارسال تیکت</a
+              >
+              <a
+                href="#"
+                class="no-underline text-slate-500 hover:text-lime-600 my-2"
+                >همه دوره ها
+              </a>
+            </div>
+          </div>
+          <div class="flex flex-col flex-grow">
+            <h4 class="text-2xl text-zinc-700 text-center mb-2 sm:text-start">
+              لینک های مفید
+            </h4>
+            <div class="flex flex-col flex-wrap justify-between">
+              <a
+                href="#"
+                class="no-underline text-slate-500 hover:text-lime-600 my-2"
+                >آموزش جاوااسکریپت</a
+              >
+              <a
+                href="#"
+                class="no-underline text-slate-500 hover:text-lime-600 my-2"
+                >آموزش پایتون</a
+              >
+              <a
+                href="#"
+                class="no-underline text-slate-500 hover:text-lime-600 my-2"
+                >آموزش HTML</a
+              >
+              <a
+                href="#"
+                class="no-underline text-slate-500 hover:text-lime-600 my-2"
+                >آموزش CSS</a
+              >
+            </div>
+          </div>
+          <div class="flex flex-col flex-grow">
+            <h4 class="text-2xl text-zinc-700 text-center mb-2 sm:text-start">
+              شبکه های اجتماعی
+            </h4>
+            <div class="flex flex-col flex-wrap justify-between">
+              <a
+                href="#"
+                class="no-underline text-slate-500 hover:text-lime-600 my-2"
+                >@sabzlearn_</a
+              >
+              <a
+                href="#"
+                class="no-underline text-slate-500 hover:text-lime-600 my-2"
+                >@sabzlearn</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="text-gray-600 mx-2">
+      <div class="flex flex-row flex-wrap justify-between">
+        <p class="text-base text-gray-500">&#128151; By "Minerva_88" with </p>
+        <p class="text-base text-gray-500">Copyright © 2019-2023 Sabzlearn. All rights reserved.</p>
+      </div>
+    </footer>
+    <!--end main-->
+  </body>
+</html>
